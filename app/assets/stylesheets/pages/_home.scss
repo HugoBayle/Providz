@@ -1,0 +1,29 @@
+// Specific CSS for your home-page
+.home-image {
+  background-image: url(asset-path("background_image.png"));
+  background-size: cover;
+  width: 100%;
+  height: 2500px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row {
+  text-align: center;
+}
+
+.punchline {
+  color: white;
+  font-size: 40px;
+}
+
+
+
+
+@media all and (max-width: 1024px) {
+
+  .punchline {
+    font-size: 15px;
+  }
+
+}
