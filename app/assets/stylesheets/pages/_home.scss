@@ -17,6 +17,40 @@
   font-size: 40px;
 }
 
+.crew {
+  margin-top: 36px;
+}
+
+.btn-crew {
+  font-size: 15px;
+  padding: 12px 36px;
+  border-radius: 4px;
+  background: #042641;
+  transition: background 0.3s ease;
+}
+
+.btn-crew:hover {
+  opacity: 0.9;
+  background: #042641;
+  text-decoration: none;
+  color: white;
+}
+
+.providz-premium {
+  height: 500px;
+  background-image: url(asset-path("crew.png"));
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.providz-premium p {
+  color: white;
+  font-size: 30px;
+}
+
+
 
 
 
