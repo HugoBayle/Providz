@@ -1,11 +1,15 @@
 /* Main navbar */
 .navbar-wagon {
+  // position: absolute;
+  height: auto;
+  width: 100%;
   transition: all 0.3s ease;
-  height: 70px;
+  // height: 70px;
   margin-top: 110px;
+  margin-bottom: 20px;
   padding: 0px 100px;
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: space-between;
 }
 
@@ -50,4 +54,31 @@
   background: #3ac162;
   text-decoration: none;
   color: white;
+}
+
+@media all and (max-width: 720px) {
+
+.navbar-wagon {
+  height: 30px;
+  margin-top: 28px;
+  margin-bottom: 0px;
+  padding: 0 24px;
+  justify-content: none;
+}
+
+.navbar-wagon-brand img {
+  height: 15px;
+}
+
+.navbar-wagon-item {
+  padding: 0 22px;
+  font-size: 7px;
+}
+
+.btn-start-brief {
+  padding: 2px 6px;
+  border-radius: 2px;
+
+}
+
 }
