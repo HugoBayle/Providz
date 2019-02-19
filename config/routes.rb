@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get 'realisation', to: 'pages#realisation', as: :realisation
+  devise_for :users
+  root to: 'pages#home'
+  get 'realisations', to: 'pages#realisations', as: :realisations
   get 'cms', to: 'pages#cms', as: :cms
-  get 'contact', to: 'pages#contact', as: :contact
+  get "contacts/new", to: "contacts#new"
+  post "contacts", to: "contacts#create"
   get 'home', to: 'pages#home', as: :home
   # get 'pages/realisations'
   # get 'pages/cms'

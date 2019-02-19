@@ -1,14 +1,14 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo.png" alt="logo">
+    <%= image_tag "logo.png"%>
   </a>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right "> <!-- hidden-xs hidden-sm -->
-
     <a href="" class="navbar-wagon-item navbar-wagon-link">Concept</a>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Réalisations</a>
+    <%= link_to "Réalisations", realisations_path, class: "navbar-wagon-item navbar-wagon-link"%>
+    <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">Réalisations</a> -->
     <a href="" class="navbar-wagon-item navbar-wagon-link btn-start-brief">START BRIEF</a>
   </div>
   <!-- Dropdown appearing on mobile only -->

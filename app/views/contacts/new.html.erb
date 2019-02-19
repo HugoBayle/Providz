@@ -1,0 +1,122 @@
+<div class="background-contact">
+  <div class="background2">
+    <div class="container">
+      <div class="row col-xs-12">
+        <div class="navbar-wagon navbar-contact">
+          <!-- Logo -->
+          <a href="/" class="navbar-wagon-brand">
+            <%= image_tag "logo.png"%>
+          </a>
+          <!-- Right Navigation -->
+          <div class="navbar-wagon-right "> <!-- hidden-xs hidden-sm -->
+            <a href="" class="navbar-wagon-item navbar-wagon-link" style="color: black;">Concept</a>
+            <%= link_to "Réalisations", realisations_path, class: "navbar-wagon-item navbar-wagon-link", :style=>'color: black;'%>
+            <!-- <a href="" class="navbar-wagon-item navbar-wagon-link">Réalisations</a> -->
+            <a href="" class="navbar-wagon-item navbar-wagon-link btn-start-brief">START BRIEF</a>
+          </div>
+        </div>
+      <div class="col-md-6 col-md-offset-3 header-contact">
+        <div class="titre-contact">
+          <h2>Démarrer votre brief</h2>
+        </div>
+        <div class="teaser-contact">
+          <h4>Vous avez un projet audiovisuel ?</h4>
+          <h4>Vous ne voulez plus perdre de temps à chercher</h4>
+          <h4>le bon prestataire pour la bonne vidéo ?</h4>
+        </div>
+        <div>
+          <p>Providz étudie tous vos projets vidéos et vous accompagne pour définir vos besoins en fonction de votre budget.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+      <%= simple_form_for(@contact) do |f| %>
+      <div class="col-md-6 col-md-offset-3">
+        <h3>A propos de votre projet</h3>
+        <p>N'oubliez pas que plus les informations sont complètes, plus cela sera simple de vous trouver une équipe !</p>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.label :"Nom du projet" %>
+            <%= f.text_field :project_name, class:"form-control" %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.label :"Type de projet" %>
+            <%= f.text_field :project_type, class:"form-control" %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.label :"Theme abordés" %>
+            <%= f.text_field :project_theme, class:"form-control" %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.label :"Format souhaité" %>
+            <%= f.text_field :project_format, class:"form-control" %>
+          </div>
+        </div>
+        <div class="form-group col-md-12">
+          <%= f.label :"Description de votre projet" %>
+          <%= f.text_field :project_description, class:"form-control" %>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.label :"Votre budget" %>
+            <%= f.text_field :project_budget, class:"form-control" %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.label :"Délais espéré" %>
+            <%= f.text_field :project_date_end, class:"form-control", placeholder:"jj/mm/aaaa" %>
+          </div>
+          <br>
+          <h3>A propos de vous</h3>
+          <p>Apprenons à mieux nous connaitre</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.label :"Prénom" %>
+            <%= f.text_field :first_name, class:"form-control" %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.label :"Nom" %>
+            <%= f.text_field :last_name, class:"form-control" %>
+          </div>
+        </div>
+        <div class="form-group col-md-12">
+          <%= f.label :"Société" %>
+          <%= f.text_field :society, class:"form-control" %>
+        </div>
+        <div class="form-group col-md-12">
+          <%= f.label :"Adresse" %>
+          <%= f.text_field :address, class:"form-control" %>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.label :"Code postal" %>
+            <%= f.text_field :zip, class:"form-control" %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.label :"Ville" %>
+            <%= f.text_field :town, class:"form-control" %>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <%= f.label :"Email" %>
+            <%= f.text_field :email, class:"form-control" %>
+          </div>
+          <div class="form-group col-md-6">
+            <%= f.label :"Téléphone" %>
+            <%= f.text_field :phone, class:"form-control" %>
+          </div>
+        </div>
+        <div class="form-group col-md-12">
+          <%= f.label :"Comment avez vous connu notre site ?" %>
+          <%= f.text_field :how_providz, class:"form-control" %>
+        </div>
+        <%= f.submit "Envoyer le projet", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

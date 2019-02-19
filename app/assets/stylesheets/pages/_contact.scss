@@ -1,0 +1,112 @@
+.background-contact {
+    background-image: url(asset-path("background_image_contact.png"));
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.background2 {
+  margin: 0 53px 0 53px;
+  padding-top: 106px;
+}
+
+.header-contact {
+  text-align: center;
+}
+
+.titre-contact {
+  padding: 30px 0 50px 0;
+}
+
+.teaser-contact {
+    h4 {
+    margin: 0 0 4px 0;
+  }
+}
+
+.form-group {
+  text-align: left;
+}
+
+
+
+/* NAVBAR */
+
+.navbar-contact {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+/* Logo */
+.navbar-wagon-brand img {
+  height: 50px;
+}
+
+/* Right section */
+.navbar-wagon-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Basic navbar item */
+.navbar-wagon-item {
+  cursor: pointer;
+  padding: 0 40px;
+}
+
+/* Navbar link */
+// .navbar-wagon-link {
+//   color: black;
+//   font-size: 14px;
+// }
+.navbar-wagon-link:hover {
+  color: #da552f;
+  text-decoration: none;
+}
+
+.btn-start-brief {
+  color: white;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background-image:linear-gradient(60deg, #F5A66E, #fb613d);
+  transition: background 0.3s ease;
+}
+
+.btn-start-brief:hover {
+  opacity: 1;
+  background: #3ac162;
+  text-decoration: none;
+  color: white;
+}
+
+@media all and (max-width: 720px) {
+
+.navbar-wagon {
+  height: 30px;
+  margin-top: 28px;
+  margin-bottom: 0px;
+  padding: 0 24px;
+  justify-content: none;
+}
+
+.navbar-wagon-brand img {
+  height: 15px;
+}
+
+.navbar-wagon-item {
+  padding: 0 22px;
+  font-size: 7px;
+}
+
+.btn-start-brief {
+  padding: 2px 6px;
+  border-radius: 2px;
+
+}
+
+}

@@ -6,7 +6,7 @@
           <%= render "shared/navbar" %>
         </div>
         <div class="row logo-p col-xs-12">
-          <img src="images/P.png" alt="P">
+              <%= image_tag "P.png"%>
         </div>
         <div class="row punchline col-xs-12">
           <p>Bookez les intermittents et freelances</p>
@@ -17,12 +17,17 @@
         </div>
         <div class = "row anim col-xs-12"></div>
         <div class=" row providz-premium col-xs-12">
+          <div>
             <h3>Providz votre accompagnateur premium</h3>
             <h3>dans vos réalisations audiovisuelles.</h3>
+          </div>
         </div>
         <div class="row panel-real col-xs-12">
           <h3>De quoi sommes-nous capables ?</h3>
           <p>Découvrez notre panel de réalisations possibles.</p>
+        </div>
+        <div class="row col-xs-12">
+          <%= render "shared/footer" %>
         </div>
       </div>
     </body>
